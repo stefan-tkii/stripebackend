@@ -1,14 +1,11 @@
 package com.stripe;
 
 import java.nio.file.Paths;
-import static spark.Spark.get;
 import static spark.Spark.post;
 import static spark.Spark.staticFiles;
 import static spark.Spark.port;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
-import com.stripe.Stripe;
-import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
 import com.stripe.model.Refund;
 import com.stripe.net.StripeResponse;
